@@ -9,6 +9,9 @@ import { JoinNewsletterComponent } from './join-newsletter/join-newsletter.compo
 })
 export class AppComponent {
   email:string;
+  longText = `The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog
+  from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
+  originally bred for hunting.`;
   title = 'cocktail-hour-angular';
   constructor(public dialog: MatDialog) {}
   openDialog() {
