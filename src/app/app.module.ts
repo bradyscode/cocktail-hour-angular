@@ -12,11 +12,13 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import {MatCardModule} from '@angular/material/card';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    JoinNewsletterComponent
+    JoinNewsletterComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

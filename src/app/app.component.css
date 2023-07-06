@@ -10,12 +10,7 @@
     justify-content: center;
     
   }
-  .drink-card {
-    display: flex;
-    max-width: 600px;
-    margin-bottom: 8px;
-    color:#b0bec5;
-  }
+
   .example-header-image {
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
     background-size: cover;

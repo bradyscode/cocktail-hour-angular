@@ -1,0 +1,5 @@
+.drink-card {
+    display: flex;
+    max-width: 600px;
+    margin: 10px;
+  }
