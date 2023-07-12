@@ -61,3 +61,8 @@ export class Drink {
   strCreativeCommonsConfirmed: string;
   dateModified: string | null;
 }
+
+export class DrinksResponse {
+  drinks: Drink[];
+}
+

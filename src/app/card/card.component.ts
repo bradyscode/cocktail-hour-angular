@@ -10,12 +10,16 @@ import { Drink } from '../cocktail.service';
 })
 export class CardComponent {
   constructor(private ds: DrinkServiceService){}
+  private drinks: Drink[];
   private drink: Drink;
-  getDrink(){
-    this.ds.getRandomDrink().subscribe(res => {
-      this.drink = res;
+  async getDrink(){
+    try{
+      this.drinks = await this.ds.fetchDrinks();
+      this.drink = this.drinks[0]
       console.log(this.drink);
-    })
+    }catch (error) {
+      console.error('Error fetching data:', error);
+    }
   }
   
 }
