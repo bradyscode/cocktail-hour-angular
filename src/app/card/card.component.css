@@ -3,3 +3,10 @@
     max-width: 600px;
     margin: 10px;
   }
+  h3{
+    margin: 0px;
+  }
+  ul{
+    list-style-type: square;
+    margin: 0px
+  }
