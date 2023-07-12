@@ -1,5 +1,10 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8ead3c82-cd08-4a4b-98c2-a6a87e4a3576/deploy-status)](https://app.netlify.com/sites/shiny-blini-a03db6/deploys)
 
+# Credit
+In this repo I am using [TheCocktailDB](https://www.thecocktaildb.com/), an amazing database and API for getting all sorts of drinks through various endpoints
+
+## TODO:
+The next step is to connect a redis db to the netlify app to store hashed emails for emailing
 # CocktailHourAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
