@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8ead3c82-cd08-4a4b-98c2-a6a87e4a3576/deploy-status)](https://app.netlify.com/sites/shiny-blini-a03db6/deploys)
+
 # CocktailHourAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
