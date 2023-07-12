@@ -8,8 +8,11 @@
   </button>
 </mat-toolbar>
 
-<div class="cards">
+<div class="cards" *ngIf="!mobile">
   <app-card /><app-card /><app-card />
+</div>
+<div class="cards" *ngIf="mobile">
+  <app-card />
 </div>
 
 </body>
