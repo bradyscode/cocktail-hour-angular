@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { DrinkServiceService } from '../drink-service.service';
 import { HttpClient, HttpHandler } from '@angular/common/http';
+import { Drink } from '../cocktail.service';
 
 @Component({
   selector: 'app-card',
@@ -9,9 +10,12 @@ import { HttpClient, HttpHandler } from '@angular/common/http';
 })
 export class CardComponent {
   constructor(private ds: DrinkServiceService){}
-
+  private drink: Drink;
   getDrink(){
-    this.ds.getRandomDrink().subscribe(val => console.log(val));
+    this.ds.getRandomDrink().subscribe(res => {
+      this.drink = res;
+      console.log(this.drink);
+    })
   }
   
 }
