@@ -10,3 +10,10 @@
     list-style-type: square;
     margin: 0px
   }
+  @media only screen and (max-device-width : 650px) {
+    .drink-card {
+      display: flex;
+      max-width: 250px;
+      margin: 10px;
+    }
+}
