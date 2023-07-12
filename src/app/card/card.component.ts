@@ -9,17 +9,38 @@ import { Drink } from '../cocktail.service';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
-  constructor(private ds: DrinkServiceService){}
+  constructor(private ds: DrinkServiceService){
+    this.getDrink()
+  }
   private drinks: Drink[];
-  private drink: Drink;
+  drink: Drink;
   async getDrink(){
     try{
       this.drinks = await this.ds.fetchDrinks();
       this.drink = this.drinks[0]
-      console.log(this.drink);
     }catch (error) {
       console.error('Error fetching data:', error);
     }
+  }
+
+
+  //return ingredients and measurments
+  get filteredIngredients(): { measure: string, value: string }[] {
+    const ingredients: { measure: string, value: string }[] = [];
+
+    for (let i = 1; i <= 15; i++) {
+      const ingredientKey = `strIngredient${i}`;
+      const measureKey = `strMeasure${i}`;
+
+      const ingredient = this.drink[ingredientKey];
+      const measure = this.drink[measureKey];
+
+      if (ingredient && ingredient.trim() !== '') {
+        ingredients.push({ measure: measure || '', value: ingredient });
+      }
+    }
+
+    return ingredients;
   }
   
 }

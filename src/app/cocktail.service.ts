@@ -9,6 +9,7 @@ export class CocktailService {
 }
 
 export class Drink {
+  [key: string]: string | null;
   idDrink: string;
   strDrink: string;
   strDrinkAlternate: string | null;
