@@ -3,10 +3,10 @@
   <mat-toolbar>
   <span>Daily Drink</span>
   <span class="example-spacer"></span>
-  <button mat-flat-button color="accent" (click)="openDialog()" *ngIf="!mobile">
+  <button hidden mat-flat-button color="accent" (click)="openDialog()" *ngIf="!mobile">
     Join the weekly newsletter!
   </button>
-  <button mat-flat-button color="accent" (click)="openDialog()" *ngIf="mobile">
+  <button hidden mat-flat-button color="accent" (click)="openDialog()" *ngIf="mobile">
     Subscribe!
   </button>
 </mat-toolbar>
