@@ -6,6 +6,9 @@
   <button mat-flat-button color="accent" (click)="openDialog()">
     Join the weekly newsletter!
   </button>
+  <button mat-flat-button color="accent" (click)="openDialog()" *ngIf="mobile">
+    Subscribe!
+  </button>
 </mat-toolbar>
 
 <div class="cards" *ngIf="!mobile">
