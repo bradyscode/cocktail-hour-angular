@@ -14,13 +14,15 @@ import { FormsModule } from '@angular/forms';
 import {MatCardModule} from '@angular/material/card';
 import { CardComponent } from './card/card.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AlcoholWarningComponent } from './alcohol-warning/alcohol-warning.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     JoinNewsletterComponent,
-    CardComponent
+    CardComponent,
+    AlcoholWarningComponent
   ],
   imports: [
     BrowserModule,

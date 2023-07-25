@@ -1,6 +1,7 @@
 import { Component, OnInit} from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { JoinNewsletterComponent } from './join-newsletter/join-newsletter.component';
+import { AlcoholWarningComponent } from './alcohol-warning/alcohol-warning.component';
 
 
 @Component({
@@ -19,6 +20,11 @@ export class AppComponent implements OnInit{
     if (window.screen.width <= 1000) {
       this.mobile = true;
     }
+
+    this.dialog.open(AlcoholWarningComponent, {
+      width: '500px'
+    });
+
   }
   openDialog() {
     const dialogRef = this.dialog.open(JoinNewsletterComponent, {
