@@ -38,3 +38,14 @@ html, body {
     flex: 1 1 auto;
     margin: auto;
   }
+
+  @media only screen and (max-device-width : 768px) {
+    button{
+      max-width: 375px;
+      font-size: 15px;
+      margin-right: auto;
+    }
+    .example-spacer {
+      flex: 1 1 auto;
+    }
+}
