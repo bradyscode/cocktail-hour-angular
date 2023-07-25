@@ -3,12 +3,16 @@ const mongoose = require("mongoose");
 const cors = require('cors'); // Import the cors middleware
 
 // Replace 'your_mongodb_connection_string' with your actual MongoDB connection string
-const mongoURI = "mongodb+srv://bradystohler13:7620oxQCL70gtfQk@cluster0.jien5xb.mongodb.net/?retryWrites=true&w=majority";
+const mongoURI = "";
+
 const app = express();
-app.use(cors());
+// Enable CORS
 app.use(function (req, res, next) {
-    res.setHeader('Access-Control-Allow-Orgin', 'http://localhost:4200');
-})
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT,DELETE");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
+    next();
+});
 
 
 // Connect to MongoDB

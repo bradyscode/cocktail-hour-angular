@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class EmailService {
-  private baseURL = 'mongodb+srv://cluster0.jien5xb.mongodb.net/';
+  private baseURL = '';
 
   constructor(private http: HttpClient) { }
 
